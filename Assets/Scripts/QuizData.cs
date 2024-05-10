@@ -6,7 +6,7 @@ public static class QuizData
         {
             "PreTest", new List<QuestionAnswer> {
                 new QuestionAnswer {
-                    QuestionType = "Complete This Code",
+                    QuestionType = "Complete This Code",    
                     QuestionText = "public class Main {\r\n  public static void main(String[] args) {\r\n    _________(\"Hello World\");\r\n  }\r\n}",
                     Answers = new string[] { "System.out.println", "System.print", "Console.log", "print" },
                     CorrectAnswer = 0,
@@ -41,7 +41,7 @@ public static class QuizData
                     QuestionType = "Complete This Code",
                     QuestionText = "public class Main {\r\n  public static void main(String[] args) {\r\n    ___________ x = 5.5;\r\n  }\r\n}",
                     Answers = new string[] { "int", "String", "float", "boolean" },
-                    CorrectAnswer = 3,
+                    CorrectAnswer = 2,
                     IsMultipleChoice = true
                 },
                 new QuestionAnswer {
@@ -242,6 +242,245 @@ public static class QuizData
                   CorrectArrangement = new string[] { "public static void main(String[] args) {", "try {", "int num = Integer.parseInt(userInput);", "System.out.println(\"Number: \" + num);", "} catch (NumberFormatException e) {", "System.out.println(\"Invalid input!\");", "}", "}" }
                 },
                 // Add more questions for Unit 1 as needed...
+            }
+        }
+    };
+    public static Dictionary<string, List<QuestionAnswer>> QuestionsID = new Dictionary<string, List<QuestionAnswer>> {
+        {
+        "PreTest", new List<QuestionAnswer> {
+            new QuestionAnswer {
+                QuestionType = "Lengkapi Kode Ini",
+                QuestionText = "public class Main {\r\n  public static void main(String[] args) {\r\n    _________(\"Hello World\");\r\n  }\r\n}",
+                Answers = new string[] { "System.out.println", "System.print", "Console.log", "print" },
+                CorrectAnswer = 0,
+                IsMultipleChoice = true
+            },
+            new QuestionAnswer {
+                QuestionType = "Temukan Bug di Kode Ini",
+                QuestionText = "public class Main {\r\n  public static void main(String[] args) {\r\n    System.println(\"Hello World\");;\r\n  }\r\n}",
+                Answers = new string[] { "System.out.println", "System.print", ";;", "print" },
+                CorrectAnswer = 2,
+                IsMultipleChoice = true
+            },
+            new QuestionAnswer {
+                QuestionType = "Apa Outputnya?",
+                QuestionText = "public class Main {\r\n  public static void main(String[] args) {\r\n    System.println(\"Hello World\");\r\n  }\r\n}",
+                Answers = new string[] { "Hello", "Hello World", "World", "H W" },
+                CorrectAnswer = 1,
+                IsMultipleChoice = true
+            },
+            new QuestionAnswer {
+                QuestionType = "Susun Kode Ini",
+                Answers = new string[] { "public class Main", "System.println(\"Hello World\");", "public static void main(String[] args){", "}" },
+                IsMultipleChoice = false,
+                CorrectArrangement = new string[] { "public class Main","public static void main(String[] args){", "System.println(\"Hello World\");", "}" },
+            },
+            // Add more questions for PreTest as needed...
+        }
+    },
+    {
+        "Unit 1", new List<QuestionAnswer> {
+            new QuestionAnswer {
+                QuestionType = "Lengkapi Kode Ini",
+                QuestionText = "public class Main {\r\n  public static void main(String[] args) {\r\n    ___________ x = 5.5;\r\n  }\r\n}",
+                Answers = new string[] { "int", "String", "float", "boolean" },
+                CorrectAnswer = 2,
+                IsMultipleChoice = true
+            },
+            new QuestionAnswer {
+                QuestionType = "Temukan Bug di Kode Ini",
+                QuestionText = "public class Main {\r\n  public static void main(String[] args) {\r\n    int num == 10;\r\n    System.out.println(num);\r\n  }\r\n}",
+                Answers = new string[] { "int num = 10;", "int num == 10;", "int num === 10;", "int num =: 10;" },
+                CorrectAnswer = 1,
+                IsMultipleChoice = true
+            },
+            new QuestionAnswer {
+                QuestionType = "Apa Outputnya?",
+                QuestionText = "public class Main {\r\n  public static void main(String[] args) {\r\n    int x = 5;\r\n    double y = 3.5;\r\n    System.out.println(x + y);\r\n  }\r\n}",
+                Answers = new string[] { "8.5", "9", "5.35", "53" },
+                CorrectAnswer = 0,
+                IsMultipleChoice = true
+            },
+            new QuestionAnswer {
+                QuestionType = "Susun Kode Ini",
+                Answers = new string[] { "int x = 5;", "System.out.println(x);", "public static void main(String[] args) {", "}" },
+                IsMultipleChoice = false,
+                CorrectArrangement = new string[] { "public static void main(String[] args) {", "int x = 5;", "System.out.println(x);", "}" },
+            },
+            // Add more questions for Unit 1 as needed...
+        }
+    },
+    // Tambahkan unit dan pertanyaan lebih lanjut sesuai kebutuhan...
+
+        // Add more units and questions as needed...
+        {
+            "Unit 2", new List<QuestionAnswer> {
+                new QuestionAnswer {
+                  QuestionType = "Lengkapi Kode Ini",
+                  QuestionText = "public class Main {\r\n public static void main(String[] args) {\r\n  int result = 10 ______ 5;  // Isi operator yang sesuai\r\n  System.out.println(result);\r\n }\r\n}",
+                  Answers = new string[] { "*/", "++", "/", "%=" },
+                  CorrectAnswer = 2,
+                  IsMultipleChoice = true
+                },
+
+                new QuestionAnswer {
+                  QuestionType = "Temukan Bug di Kode Ini",
+                  QuestionText = "public class Main {\r\n public static void main(String[] args) {\r\n  int num1 = 15;\r\n  int num2 = 5;\r\n  // Kode yang sudah diperbaiki: int result = num1 % num2;\r\n  int result = num1 %= num2;  // Identifikasi bug\r\n  System.out.println(result);\r\n }\r\n}",
+                  Answers = new string[] { "Operator %= harus diganti menjadi %.", "Kurung kurawal kurang di sekitar num1 % num2.", "Variabel harus dinyatakan sebagai double.", "Tidak ada bug di kode." },
+                  CorrectAnswer = 1,
+                  IsMultipleChoice = true
+                },
+
+                new QuestionAnswer {
+                  QuestionType = "Apa Outputnya?",
+                  QuestionText = "public class Main {\r\n public static void main(String[] args) {\r\n  boolean a = true;\r\n  boolean b = false;\r\n  System.out.println(a && b);\r\n }\r\n}",
+                  Answers = new string[] { "true", "false", "0", "1" },
+                  CorrectAnswer = 1,
+                  IsMultipleChoice = true
+                },
+
+                new QuestionAnswer {
+                  QuestionType = "Susun Kode Ini",
+                  Answers = new string[] { "int x = 5;", "System.out.println(x + 3 == 8);", "public static void main(String[] args) {", "}" },
+                  IsMultipleChoice = false,
+                  CorrectArrangement = new string[] { "public static void main(String[] args) {", "int x = 5;", "System.out.println(x + 3 == 8);", "}" }
+                }
+            }
+        },
+        {
+            "Unit 3", new List<QuestionAnswer> {
+                new QuestionAnswer {
+                  QuestionType = "Lengkapi Kode Ini",
+                  QuestionText = "public class Main {\r\n  public static void main(String[] args) {\r\n    String name = new Scanner(System.in).nextLine();  // Ganti baris untuk membaca input pengguna\r\n    System.out.println(\"Hello, \" + name);\r\n  }\r\n}",
+                  Answers = new string[] { "String name = System.console().readLine();", "String name = JOptionPane.showInputDialog(\"Masukkan nama Anda\");", "String name = \"Alice\";", "String name = args[0];" },
+                  CorrectAnswer = 0,
+                  IsMultipleChoice = true
+                },
+
+                new QuestionAnswer {
+                  QuestionType = "Temukan Bug di Kode Ini",
+                  QuestionText = "public class Main {\r\n  public static void main(String[] args) {\r\n    int num = Integer.parseInt(System.in.readLine());  // Membaca input pengguna\r\n    System.out.println(\"Anda memasukkan: \" + num);\r\n  }\r\n}",
+                  Answers = new string[] {"Tidak ada bug di kode.", "Integer.parseInt harus diganti dengan Integer.valueOf.", "System.in.read() harus digunakan alih-alih readLine().", "Kode tidak menangani input non numerik."},
+                  CorrectAnswer = 3,
+                  IsMultipleChoice = true
+                },
+
+                new QuestionAnswer {
+                  QuestionType = "Apa Outputnya?",
+                  QuestionText = "public class Main {\r\n  public static void main(String[] args) {\r\n    System.out.print(\"Masukkan usia Anda: \");\r\n    int age = new Scanner(System.in).nextInt();\r\n    System.out.println(\"Usia Anda adalah: \" + age);\r\n  }\r\n}",
+                  Answers = new string[] {"Program menyapa pengguna dan keluar.", "Program meminta usia pengguna dan mencetaknya.", "Kode dikompilasi dengan kesalahan.", "Membuka file bernama \"usia.txt\"."},
+                  CorrectAnswer = 1,
+                  IsMultipleChoice = true
+                },
+
+                new QuestionAnswer {
+                  QuestionType = "Susun Kode Ini",
+                  Answers = new string[] { "System.out.print(\"Masukkan nama Anda: \");", "String name = new Scanner(System.in).nextLine();", "public static void main(String[] args) {", "}", "System.out.println(\"Hello, \" + name);"},
+                  IsMultipleChoice = false,
+                  CorrectArrangement = new string[] { "public static void main(String[] args) {", "System.out.print(\"Masukkan nama Anda: \");", "String name = new Scanner(System.in).nextLine();", "System.out.println(\"Hello, \" + name);", "}" }
+                }
+            }
+        },
+        {
+            "Unit 4", new List<QuestionAnswer> {
+                new QuestionAnswer {
+                  QuestionType = "Lengkapi Kode Ini",
+                  QuestionText = "public class Main {\r\n  public static void main(String[] args) {\r\n    int age = 25;\r\n    if (age ______ 18) {  // Isikan operator perbandingan yang sesuai\r\n      System.out.println(\"Anda sudah dewasa.\");\r\n    }\r\n  }\r\n}",
+                  Answers = new string[] { ">", ">=", "<", "<=" },
+                  CorrectAnswer = 1,
+                  IsMultipleChoice = true
+                },
+
+                new QuestionAnswer {
+                  QuestionType = "Temukan Bug di Kode Ini",
+                  QuestionText = "public class Main {\r\n  public static void main(String[] args) {\r\n    for (int i = 0; i <= 5; i++) {  // Temukan bug\r\n      System.out.println(i);\r\n    }\r\n  }\r\n}",
+                  Answers = new string[] {"Loop seharusnya melakukan iterasi 6 kali, bukan 5.", "Loop kekurangan kurung kurawal setelah kondisi.", "Variabel i harus dinyatakan sebagai double.", "Tidak ada bug di kode."},
+                  CorrectAnswer = 0,
+                  IsMultipleChoice = true
+                },
+
+                new QuestionAnswer {
+                  QuestionType = "Apa Outputnya?",
+                  QuestionText = "public class Main {\r\n  public static void main(String[] args) {\r\n    int sum = 0;\r\n    for (int i = 1; i <= 3; i++) {\r\n      sum += i;\r\n    }\r\n    System.out.println(sum);\r\n  }\r\n}",
+                  Answers = new string[] {"0", "1", "3", "6"},
+                  CorrectAnswer = 3,
+                  IsMultipleChoice = true
+                },
+
+                new QuestionAnswer {
+                  QuestionType = "Susun Kode Ini",
+                  Answers = new string[] { "int i = 0;", "System.out.println(i);", "for (int i = 0; i < 3; i++) {", "}", "i++" },
+                  IsMultipleChoice = false,
+                  CorrectArrangement = new string[] { "for (int i = 0; i < 3; i++) {", "int i = 0;", "System.out.println(i);", "i++", "}" }
+                }
+            }
+        },
+        {
+            "Unit 5", new List<QuestionAnswer> {
+                new QuestionAnswer {
+                  QuestionType = "Lengkapi Kode Ini",
+                  QuestionText = "public class Main {\r\n  public static void main(String[] args) {\r\n    int[] numbers = new int[5];  // Deklarasikan sebuah array\r\n    numbers[2] = ______;  // Berikan nilai pada elemen ke-3\r\n    System.out.println(numbers[2]);\r\n  }\r\n}",
+                  Answers = new string[] { "10", "2", "{1, 2, 3}", "numbers.length" },
+                  CorrectAnswer = 1,
+                  IsMultipleChoice = true
+                },
+
+                new QuestionAnswer {
+                  QuestionType = "Temukan Bug di Kode Ini",
+                  QuestionText = "public class Main {\r\n  public static void main(String[] args) {\r\n    int[] numbers = {1, 2, 3, 4, 5};\r\n    System.out.println(numbers[6]);  // Temukan bug\r\n  }\r\n}",
+                  Answers = new string[] {"Array dideklarasikan dengan ukuran 5, tetapi diakses pada indeks 6.", "Elemen-elemen dicetak di urutan terbalik.", "Loop melakukan iterasi satu kali ekstra.", "Tidak ada bug di kode."},
+                  CorrectAnswer = 0,
+                  IsMultipleChoice = true
+                },
+
+                new QuestionAnswer {
+                  QuestionType = "Apa Outputnya?",
+                  QuestionText = "public class Main {\r\n  public static void main(String[] args) {\r\n    String[] names = {\"Alice\", \"Bob\", \"Charlie\"};\r\n    System.out.println(names[1]);\r\n  }\r\n}",
+                  Answers = new string[] {"Program dikompilasi dengan kesalahan.", "Ini mencetak semua elemen dari array.", "Ini mencetak panjang array.", "Ini mencetak elemen kedua (Bob)."},
+                  CorrectAnswer = 3,
+                  IsMultipleChoice = true
+                },
+
+                new QuestionAnswer {
+                  QuestionType = "Susun Kode Ini",
+                  Answers = new string[] { "int[][] matrix = {{1, 2, 3}, {4, 5, 6}};", "System.out.println(matrix[1][0]);", "public static void main(String[] args) {", "}", "for (int i = 0; i < matrix.length; i++) {" },
+                  IsMultipleChoice = false,
+                  CorrectArrangement = new string[] { "public static void main(String[] args) {", "int[][] matrix = {{1, 2, 3}, {4, 5, 6}};", "for (int i = 0; i < matrix.length; i++) {", "System.out.println(matrix[i][0]);", "}", "}" }
+                }
+            }
+        },
+        {
+            "Unit 6", new List<QuestionAnswer> {
+                new QuestionAnswer {
+                  QuestionType = "Lengkapi Kode Ini",
+                  QuestionText = "public class Main {\r\n  public static void main(String[] args) {\r\n    int[] numbers = new int[2];\r\n    try {\r\n      numbers[3] = 10; // Baris ini mungkin menyebabkan pengecualian\r\n    } catch (______ e) {  // Isi dengan jenis pengecualian yang sesuai\r\n      System.out.println(\"Indeks array di luar batas!\");\r\n    }\r\n  }\r\n}",
+                  Answers = new string[] { "IndexOutOfBoundsException", "ArrayIndexOutOfBoundsException", "IntegerException", "NumberFormatException" },
+                  CorrectAnswer = 1,
+                  IsMultipleChoice = true
+                },
+
+                new QuestionAnswer {
+                  QuestionType = "Temukan Bug di Kode Ini",
+                  QuestionText = "public class Main {\r\n  public static void main(String[] args) {\r\n    int num = Integer.parseInt(\"hello\");  // Baris ini mungkin menyebabkan pengecualian\r\n    System.out.println(num);\r\n  }\r\n}",
+                  Answers = new string[] {"Pengecualian tidak ditangani.", "Metode `parseInt` harus diganti menjadi `valueOf`.", "Variabel `num` harus dinyatakan sebagai `String`.", "Tidak ada bug di kode."},
+                  CorrectAnswer = 0,
+                  IsMultipleChoice = true
+                },
+
+                new QuestionAnswer {
+                  QuestionType = "Apa Outputnya?",
+                  QuestionText = "public class Main {\r\n  public static void main(String[] args) {\r\n    try {\r\n      int result = 10 / 0;\r\n    } catch (ArithmeticException e) {\r\n      System.out.println(\"Pembagian dengan nol!\");\r\n    }\r\n  }\r\n}",
+                  Answers = new string[] {"Program dikompilasi dengan kesalahan.", "Ini mencetak nilai dari variabel `result`.", "Ini melemparkan pengecualian yang tidak ditangani.", "Ini mencetak \"Pembagian dengan nol!\".", "Ini keluar tanpa mencetak apa pun."},
+                  CorrectAnswer = 3,
+                  IsMultipleChoice = true
+                },
+
+                new QuestionAnswer {
+                  QuestionType = "Susun Kode Ini",
+                  Answers = new string[] { "System.out.println(\"Number: \" + num);", "int num = Integer.parseInt(userInput);", "public static void main(String[] args) {", "}", "try {", "catch (NumberFormatException e) {", "}" },
+                  IsMultipleChoice = false,
+                  CorrectArrangement = new string[] { "public static void main(String[] args) {", "try {", "int num = Integer.parseInt(userInput);", "System.out.println(\"Number: \" + num);", "} catch (NumberFormatException e) {", "System.out.println(\"Invalid input!\");", "}", "}" }
+                }
             }
         }
     };

@@ -1,16 +1,18 @@
 using UnityEngine;
+using UnityEngine.Localization.Settings;
+using UnityEngine.Localization;
 using UnityEngine.SceneManagement;
 
 public class PlayGame : MonoBehaviour
 {
-    void Awake()
+    private void Start()
     {
-        // Check if AlreadyPlay PlayerPrefs key exists
-        if (!PlayerPrefs.HasKey("AlreadyPlay"))
-        {
-            // Set AlreadyPlay to 0 if it doesn't exist
-            PlayerPrefs.SetInt("AlreadyPlay", 0);
-        }
+        int localeID = PlayerPrefs.GetInt("LocaleKey");
+        Debug.Log("locale ID: "+ localeID);
+        LocalizationSettings.SelectedLocale = LocalizationSettings.AvailableLocales.Locales[localeID];
+
+        PlayerPrefs.SetInt("LocaleKey", localeID);
+        PlayerPrefs.Save(); // Save PlayerPrefs immediately after changing the locale
     }
 
     public void StartBtn()
@@ -25,5 +27,15 @@ public class PlayGame : MonoBehaviour
             Debug.Log("First Time Opening");
             SceneManager.LoadScene("ChooseDifficulty");
         }
+    }
+
+    public void AboutGame()
+    {
+        SceneManager.LoadScene("AboutGame");
+    }
+
+    public void ExitGame()
+    {
+        Application.Quit();
     }
 }

@@ -6,8 +6,14 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/ChooseLanguage.unity
+    guid: f3aef8494216302429c2c2c2c6e811b8
+  - enabled: 1
     path: Assets/Scenes/StartMenu.unity
     guid: 3fc8acdd13e6c734bafef6554d6fdbcd
+  - enabled: 1
+    path: Assets/Scenes/AboutGame.unity
+    guid: 3fbdfcbd09bcc434989694495c921e35
   - enabled: 1
     path: Assets/Scenes/ChooseDifficulty.unity
     guid: 22cc83a11f65c8242b4083c6906d14b6
@@ -25,3 +31,5 @@ EditorBuildSettings:
     guid: ca34eebfbe8d40d46bb1c0b0ef9cede9
   m_configObjects:
     com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000, guid: 6d7b4df96d465c74c91cca51ba5cede1, type: 2}
+    com.unity.addressableassets: {fileID: 11400000, guid: 5b648a23adf013f4688fe564aa83696d, type: 2}
+    com.unity.localization.settings: {fileID: 11400000, guid: 9cb18f912a1f4424aada65a117822d01, type: 2}

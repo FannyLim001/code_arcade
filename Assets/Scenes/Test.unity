@@ -157,7 +157,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -25}
+  m_AnchoredPosition: {x: 0, y: -25.00003}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &49022208
@@ -377,8 +377,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 116.268555}
-  m_SizeDelta: {x: -100.000015, y: -808.3022}
+  m_AnchoredPosition: {x: 0, y: 202.13275}
+  m_SizeDelta: {x: -100, y: -980.0324}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &386985429
 MonoBehaviour:
@@ -453,7 +453,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 62, y: -87}
+  m_AnchoredPosition: {x: 652, y: -87}
   m_SizeDelta: {x: 46, y: 54}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &410062453
@@ -499,7 +499,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 410062454}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 712275236}
+        m_TargetAssemblyTypeName: QuizManager, Assembly-CSharp
+        m_MethodName: Exit
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &410062454
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -575,7 +587,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -175.5, y: 419}
+  m_AnchoredPosition: {x: -175.5, y: 583}
   m_SizeDelta: {x: 259, y: 105}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &437355160
@@ -1122,6 +1134,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentUnit: 
   Question: []
+  unansweredQuestion: []
   options:
   - {fileID: 437355158}
   - {fileID: 1997275689}
@@ -1136,7 +1149,6 @@ MonoBehaviour:
   correctPanel: {fileID: 1842355259}
   incorrectPanel: {fileID: 1658827978}
   submitBtn: {fileID: 1560962245}
-  testPanel: {fileID: 355972234}
   storedList: []
 --- !u!4 &712275237
 Transform:
@@ -1190,7 +1202,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -175.5, y: 258}
+  m_AnchoredPosition: {x: -175.5, y: 421.99997}
   m_SizeDelta: {x: 259, y: 105}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &786459869
@@ -1424,7 +1436,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -371.56952, w: 0}
+  m_margin: {x: 0, y: 0, z: -434.8993, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1873,7 +1885,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -7.25, y: -687.6581}
+  m_AnchoredPosition: {x: -7.25, y: -527}
   m_SizeDelta: {x: 595.5, y: 92.8376}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1560962247
@@ -2024,7 +2036,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 161, y: 258}
+  m_AnchoredPosition: {x: 161, y: 421.99997}
   m_SizeDelta: {x: 259, y: 105}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1629208674
@@ -2173,7 +2185,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -147, y: -88}
+  m_AnchoredPosition: {x: -255, y: -88}
   m_SizeDelta: {x: 91, y: 91}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1638166747
@@ -2729,7 +2741,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 161, y: 419}
+  m_AnchoredPosition: {x: 161, y: 583}
   m_SizeDelta: {x: 259, y: 105}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1997275691

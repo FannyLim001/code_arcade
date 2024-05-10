@@ -62,7 +62,6 @@ public class PlayerResult : MonoBehaviour
         else
         {
             Debug.Log("Failed"); // Failed test
-            continueBtn.interactable = false;
         }
     }
 

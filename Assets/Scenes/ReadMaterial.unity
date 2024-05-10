@@ -287,6 +287,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 914163496}
   - {fileID: 1505793379}
   - {fileID: 59692992}
   - {fileID: 317241220}
@@ -395,39 +396,38 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dui ante,
-    semper sit amet dui a, auctor porttitor turpis. Cras ut mauris imperdiet enim
-    cursus dapibus. Morbi ut dolor placerat, viverra lacus quis, bibendum mauris.
-    Sed sed eleifend neque. Sed iaculis id dolor at convallis. Nunc hendrerit luctus
-    nisl. Maecenas fermentum purus non pretium suscipit. Phasellus vulputate molestie
-    elit, eget blandit nibh malesuada et. Interdum et malesuada fames ac ante ipsum
-    primis in faucibus. Vestibulum rhoncus a eros a iaculis. Donec lacus justo, faucibus
-    sit amet dignissim et, convallis malesuada diam. Pellentesque volutpat volutpat
-    diam ut ornare. Phasellus vel tempor mauris. Duis ligula orci, tempor ut erat
-    in, semper ultricies nulla. Donec vehicula augue sit amet tellus placerat egestas.
-    Duis euismod, sem a pretium scelerisque, arcu felis euismod libero, ac vulputate
-    est neque in massa.
+  m_text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam semper
+    hendrerit imperdiet. Mauris in enim sit amet turpis scelerisque congue sed sed
+    elit. Nullam ornare varius ullamcorper. Morbi blandit ultricies lorem ac efficitur.
+    Suspendisse fermentum sagittis sapien in maximus. In hac habitasse platea dictumst.
+    Donec sodales justo eros, vel efficitur odio mollis ut. Morbi vitae enim sit
+    amet urna vehicula luctus sed dignissim tortor. Duis suscipit et tellus a imperdiet.
+    Phasellus tortor risus, euismod sit amet consectetur non, ultricies et mi. Donec
+    nec nibh enim. Donec blandit tempor ipsum vel efficitur. Morbi vitae orci blandit
+    quam pharetra condimentum.
 
 
 
-    Pellentesque felis ligula, luctus nec mi quis, blandit
-    semper sapien. Proin vulputate turpis sit amet sem dictum vehicula. Fusce quam
-    sapien, pulvinar ac enim ac, gravida bibendum nisl. Mauris eget leo sit amet
-    ipsum suscipit bibendum sit amet a diam. Suspendisse ac metus velit. Cras erat
-    sapien, blandit sit amet viverra eu, bibendum at lectus. Suspendisse potenti.
+    Integer facilisis diam sed rutrum interdum.
+    Nam consequat ullamcorper ultricies. Aliquam finibus, lectus eu sagittis bibendum,
+    felis neque suscipit est, sed consequat est elit et velit. Vestibulum malesuada
+    est a mauris consequat tincidunt. Interdum et malesuada fames ac ante ipsum primis
+    in faucibus. Etiam blandit, mi vel placerat rutrum, lorem neque faucibus metus,
+    sed accumsan ex arcu volutpat nulla. Nullam sit amet porta enim.
 
 
 
-    Suspendisse
-    vitae congue ex. Praesent mollis ultricies arcu in lobortis. Vestibulum aliquet
-    quis nibh sed dapibus. Ut risus neque, faucibus at ultrices ut, tincidunt et
-    purus. Mauris dolor eros, volutpat eget libero id, rutrum consectetur enim. Nam
-    sapien turpis, dapibus at convallis sit amet, accumsan vitae leo. Vestibulum
-    ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;
-    Vivamus placerat nisi sapien, in fringilla eros accumsan in. Class aptent taciti
-    sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis
-    turpis sem, ultricies nec massa eget, accumsan ultricies massa. Nulla porttitor
-    turpis diam, id pulvinar dolor accumsan et.'
+    Cras
+    pulvinar leo vitae molestie tempus. Donec quis pulvinar orci. Integer ac turpis
+    neque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ultrices
+    eu lorem gravida dignissim. Vivamus dui purus, rutrum eu eros et, varius pellentesque
+    nisi. Vestibulum id sem ac turpis finibus mollis. Donec gravida molestie fermentum.
+    In et lectus suscipit, blandit metus nec, accumsan tortor. Aenean at faucibus
+    nisi, quis consequat magna. Donec cursus maximus quam. Maecenas interdum faucibus
+    lacus. Sed sollicitudin augue vel elementum sodales. Nullam justo lectus, rhoncus
+    eget blandit ac, porta et odio. Suspendisse pretium mi accumsan nulla semper,
+    sed fermentum sapien maximus. Nulla venenatis, magna at elementum pulvinar, felis
+    sapien maximus metus, ut fringilla tellus augue non arcu.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e304ff8fbb9e4144fb9adaca51205c75, type: 2}
   m_sharedMaterial: {fileID: 4008402557716360185, guid: e304ff8fbb9e4144fb9adaca51205c75, type: 2}
@@ -533,180 +533,70 @@ MonoBehaviour:
   materialPoint:
   - "<style=\"Title\">Variable</style>\n\nA variable is a representation of data
     or an object, recognized through an identifier, allowing manipulation of the
-    data or object. In Java, variables can be categorized into two types:\r\n\r\n1.
-    Primitive data type variables: These hold specific values and are not references
-    to specific classes or objects.\r\n\r\n2. Reference data type variables: These
-    refer to objects, which are libraries consisting of data and methods.\r\n\r\nVariable
-    declaration informs the Java compiler that the program uses variables of a specific
-    data type.\n\nSyntax:\r\n\rDataType variableName;\r\n\nExample:\r\n\rint value;\r\n\nHere,
-    int is the data type for handling integers, and value is the variable name.\n\n<style=\"Title\">Data
-    Types</style>\n\nBased on their data types, primitive data types can be grouped
-    into four categories:\r\n\r\n1. Integer data type: byte, short, int, long\r\n2.
-    Float data type: float, double\r\n3. Character data type: char\r\n4. Boolean
-    data type: boolean"
-  - '<style="Title">Operator</style>
-
-
-    Operators are used to perform data manipulation,
+    data or object. In Java, variables can be categorized into two types:\r\n\r\r\n<indent=20px><size=\"30\"><color=#8DB8DF>\u2022Primitive
+    data type variables: These hold specific values and are not references to specific
+    classes or objects.</color></size></indent>\r\n\n<indent=20px><size=\"30\"><color=#8DB8DF>\u2022Reference
+    data type variables: These refer to objects, which are libraries consisting of
+    data and methods.</color></size></indent>\r\n\nVariable declaration informs the
+    Java compiler that the program uses variables of a specific data type.\n\nSyntax:\r\n\rDataType
+    variableName;\r\n\nExample:\r\n\rint value;\r\n\nHere, int is the data type for
+    handling integers, and value is the variable name.\n\n<style=\"Title\">Data Types</style>\n\nBased
+    on their data types, primitive data types can be grouped into four categories:\r\n\r\n<indent=20px><size=\"30\"><color=#8DB8DF>1.
+    Integer data type: byte, short, int, long</color></size></indent>\r\n<indent=20px><size=\"30\"><color=#8DB8DF>2.
+    Float data type: float, double</color></size></indent>\r\n<indent=20px><size=\"30\"><color=#8DB8DF>3.
+    Character data type: char</color></size></indent>\r\n<indent=20px><size=\"30\"><color=#8DB8DF>4.
+    Boolean data type: boolean</color></size></indent>"
+  - "<style=\"Title\">Operator</style>\n\nOperators are used to perform data manipulation,
     typically involving variables and/or constants that have been previously defined.
-    The types of operators are as follows:
-
-
-
-    1. Unary: Requires one operand.
-
-    Example:
-    a++
-
-
-
-    2. Binary: Requires two operands.
-
-    Example: a + b
-
-
-
-    3. Ternary:
-    Requires three operands.
-
-    Example: a ? b : c
-
-
-    <style="Title">Arithmetic
-    Operator</style>
-
-    Here are some common arithmetic operators:
-
-
-
-    1. Addition
-    (+): Used for addition.
-
-    2. Subtraction (-): Used for subtraction.
-
-    3.
-    Multiplication (*): Used for multiplication.
-
-    4. Division (/): Used for division.
-
-    5.Modulus
-    (%): Returns the remainder of a division.
-
-
-    <style="Title">Relational Operator</style>
-
-    These
-    are comparison operators used to compare two operands:
-
-
-
-    1. Greater than
-    (>): Returns true if op1 is greater than op2.
-
-    2. Greater than or equal to
-    (>=): Returns true if op1 is greater than or equal to op2.
-
-    3. Less than
-    (<): Returns true if op1 is less than op2.
-
-    4. Less than or equal to (<=):
-    Returns true if op1 is less than or equal to op2.
-
-    5. Equal to (==): Returns
-    true if op1 is equal to op2.
-
-    6. Not equal to (!=): Returns true if op1 is
-    not equal to op2
-
-
-    <style="Title">Conditional Operator</style>
-
-    These
-    are logical operators used for combining boolean expressions:
-
-
-
-    Logical
-    AND (&&): Returns true if both op1 and op2 are true. Op2 will not be evaluated
-    if op1 is false.
-
-    Logical OR (||): Returns true if either op1 or op2 is true.
-    Op2 will not be evaluated if op1 is true.
-
-    Logical NOT (!): Returns true
-    if op1 is false, and vice versa
-
-
-    <style="Title">Shift and Bitwise Operator</style>
-
-    These
-    are bitwise shift operators used to shift the bits of a number:
-
-
-
-    1. Right
-    shift (>>): Shifts the bits of op1 to the right by op2 positions.
-
-    2. Left
-    shift (<<): Shifts the bits of op1 to the left by op2 positions.
-
-    3. Unsigned
-    right shift (>>>): Shifts the bits of op1 to the right by op2 positions, filling
-    the leftmost bits with zeros.
-
-
-    <style="Title">Assignment Operator</style>
-
-    These
-    are assignment operators that perform an operation on the variable and assign
-    the result back to the variable:
-
-
-
-    1. Addition assignment (+=): Adds op2
-    to op1 and assigns the result to op1.
-
-    2. Subtraction assignment (-=): Subtracts
-    op2 from op1 and assigns the result to op1.
-
-    3. Multiplication assignment
-    (*=): Multiplies op1 by op2 and assigns the result to op1.
-
-    4.Division assignment
-    (/=): Divides op1 by op2 and assigns the result to op1.
-
-    5. Modulus assignment
-    (%=): Computes the remainder of op1 divided by op2 and assigns the result to
-    op1.
-
-    6. Bitwise AND assignment (&=): Performs a bitwise AND operation between
-    op1 and op2 and assigns the result to op1.
-
-    7. Bitwise OR assignment (|=):
-    Performs a bitwise OR operation between op1 and op2 and assigns the result to
-    op1.
-
-    8. Bitwise XOR assignment (^=): Performs a bitwise XOR operation between
-    op1 and op2 and assigns the result to op1.
-
-    9. Left shift assignment (<<=):
-    Shifts the bits of op1 to the left by the number of positions specified by op2
-    and assigns the result to op1.
-
-    10. Right shift assignment (>>=): Shifts
-    the bits of op1 to the right by the number of positions specified by op2 and
-    assigns the result to op1.
-
-    11. Unsigned right shift assignment (>>>=): Shifts
+    The types of operators are as follows:\n\n\n1. Unary: Requires one operand.\nExample:
+    a++\n\n\n2. Binary: Requires two operands.\nExample: a + b\n\n\n3. Ternary: Requires
+    three operands.\nExample: a ? b : c\n\n<style=\"Title\">Arithmetic Operator</style>\nHere
+    are some common arithmetic operators:\n\n<indent=20px><size=\"30\"><color=#8DB8DF>\r\n\r1.
+    Addition (+): Used for addition.\n2. Subtraction (-): Used for subtraction.\n3.
+    Multiplication (*): Used for multiplication.\n4. Division (/): Used for division.\n5.Modulus
+    (%): Returns the remainder of a division.\n</color></size></indent>\n\n<style=\"Title\">Relational
+    Operator</style>\nThese are comparison operators used to compare two operands:\n\n<indent=20px><size=\"30\"><color=#8DB8DF>\n1.
+    Greater than (>): Returns true if op1 is greater than op2.\n2. Greater than or
+    equal to (>=): Returns true if op1 is greater than or equal to op2.\n3. Less
+    than (<): Returns true if op1 is less than op2.\n4. Less than or equal to (<=):
+    Returns true if op1 is less than or equal to op2.\n5. Equal to (==): Returns
+    true if op1 is equal to op2.\n6. Not equal to (!=): Returns true if op1 is not
+    equal to op2\n</color></size></indent>\n\n<style=\"Title\">Conditional Operator</style>\nThese
+    are logical operators used for combining boolean expressions:\n\n<indent=20px><size=\"30\"><color=#8DB8DF>\n1.
+    Logical AND (&&): Returns true if both op1 and op2 are true. Op2 will not be
+    evaluated if op1 is false.\n2. Logical OR (||): Returns true if either op1 or
+    op2 is true. Op2 will not be evaluated if op1 is true.\n3. Logical NOT (!): Returns
+    true if op1 is false, and vice versa\n</color></size></indent>\n\n<style=\"Title\">Shift
+    and Bitwise Operator</style>\nThese are bitwise shift operators used to shift
+    the bits of a number:\n\n<indent=20px><size=\"30\"><color=#8DB8DF>\n1. Right
+    shift (>>): Shifts the bits of op1 to the right by op2 positions.\n2. Left shift
+    (<<): Shifts the bits of op1 to the left by op2 positions.\n3. Unsigned right
+    shift (>>>): Shifts the bits of op1 to the right by op2 positions, filling the
+    leftmost bits with zeros.\n</color></size></indent>\n\n<style=\"Title\">Assignment
+    Operator</style>\nThese are assignment operators that perform an operation on
+    the variable and assign the result back to the variable:\n\n<indent=20px><size=\"30\"><color=#8DB8DF>\n1.
+    Addition assignment (+=): Adds op2 to op1 and assigns the result to op1.\n2.
+    Subtraction assignment (-=): Subtracts op2 from op1 and assigns the result to
+    op1.\n3. Multiplication assignment (*=): Multiplies op1 by op2 and assigns the
+    result to op1.\n4.Division assignment (/=): Divides op1 by op2 and assigns the
+    result to op1.\n5. Modulus assignment (%=): Computes the remainder of op1 divided
+    by op2 and assigns the result to op1.\n6. Bitwise AND assignment (&=): Performs
+    a bitwise AND operation between op1 and op2 and assigns the result to op1.\n7.
+    Bitwise OR assignment (|=): Performs a bitwise OR operation between op1 and op2
+    and assigns the result to op1.\n8. Bitwise XOR assignment (^=): Performs a bitwise
+    XOR operation between op1 and op2 and assigns the result to op1.\n9. Left shift
+    assignment (<<=): Shifts the bits of op1 to the left by the number of positions
+    specified by op2 and assigns the result to op1.\n10. Right shift assignment (>>=):
+    Shifts the bits of op1 to the right by the number of positions specified by op2
+    and assigns the result to op1.\n11. Unsigned right shift assignment (>>>=): Shifts
     the bits of op1 to the right by the number of positions specified by op2 (unsigned)
-    and assigns the result to op1.'
+    and assigns the result to op1.\n</color></size></indent>"
   - '<style="Title">Input/Output</style>
 
     To make a program more dynamic in terms
     of providing values to variables, you can utilize input/output functions available
     in the Java programming language. Basic input/output operations typically fall
     into two categories: console-based and dialog box-based.
-
 
 
     1. Console Input/Output:
@@ -794,42 +684,48 @@ MonoBehaviour:
     is linear or straight. The storage addresses in a one-dimensional array are called
     indices. Indices in an array start from memory address 0 and go up to memory
     address size-1. There are two ways to declare a one-dimensional array:\r\n\r\n1.
-    The first declaration method:\r\n```java\r\nDataType varArray[] = new DataType[sizeArray];\r\n```\r\nExample:\r\n```java\r\nint
-    nilai[] = new int[5];\r\n```\r\n- `DataType`: Specifies the type of data to be
-    stored in the array.\r\n- `varArray`: Is the reference variable name for the
-    array. It's freely chosen but follows the rules for identifiers.\r\n- `[]` and
-    `new DataType`: Indicates creating a one-dimensional array.\r\n- `[sizeArray]`:
-    Specifies the size of the array space to be reserved in memory.\r\n\r\n2. The
-    second declaration method:\r\n```java\r\nDataType varArray[] = {dataArray};\r\n```\r\nExample:\r\n```java\r\nint
-    nilai[] = {3, 5, 1, 10, 17};\r\n```\r\n- `DataType`: Specifies the type of data
-    to be stored in the array.\r\n- `varArray`: Is the reference variable name for
-    the array. It's freely chosen but follows the rules for identifiers.\r\n- `[]`:
-    Indicates creating a one-dimensional array.\r\n- `{dataArray}`: Indicates the
-    data content and the size of the array stored in memory.\r\n- In the example,
-    the size of the array is 5. Accessing index 0 is done with `nilai[0]`. The address
-    of the data 10 is at index 3.\r\n\r\nTo manipulate array data, loop statements
-    are used.\n\n<style=\"Title\">Array 2 Dimention</style>\nThe representation of
-    data storage in a two-dimensional array is in the form of a table, meaning it
-    has rows and columns. The storage addresses in a two-dimensional array are called
-    cells, which are the intersections of rows and columns. Cells in a two-dimensional
-    array start from memory address (0,0) and go up to memory address (sizeRow-1,sizeColumn-1).
-    There are two ways to declare a two-dimensional array:\r\n\r\n1. The first declaration
-    method:\r\n```java\r\nDataType varArray[][] = new DataType[row][column];\r\n```\r\nExample:\r\n```java\r\nint
-    nilai[][] = new int[3][4];\r\n```\r\n- `DataType`: Specifies the type of data
-    to be stored in the array.\r\n- `varArray`: Is the reference variable name for
-    the array. It's freely chosen but follows the rules for identifiers.\r\n- `[][]`
-    and `new DataType`: Indicates creating a two-dimensional array.\r\n- `[row][column]`:
-    Specifies the size of the row and column spaces of the array to be reserved in
-    memory.\r\n\r\n2. The second declaration method:\r\n```java\r\nDataType varArray[][]
-    = {{data1}, {data2}};\r\n```\r\nExample:\r\n```java\r\nint nilai[][] = {{3, 5},
-    {7, 6}};\r\n```\r\n- `DataType`: Specifies the type of data to be stored in the
-    array.\r\n- `varArray`: Is the reference variable name for the array. It's freely
-    chosen but follows the rules for identifiers.\r\n- `[][]`: Indicates creating
-    a two-dimensional array.\r\n- `{{data1}, {data2}}`: Indicates the data content
-    and the size of the array stored in memory.\r\n- In the example, the size of
-    the array is rows = 2 and columns = 2. Accessing the array at cell 0,0 is done
-    with `nilai[0][0]`. The address of the data 7 is at cell (1,0).\r\n\r\nTo manipulate
-    array data, nested loop statements are used."
+    The first declaration method:\r\n<indent=20px><size=\"30\"><color=#8DB8DF>\r\nDataType
+    varArray[] = new DataType[sizeArray];\r\n</color></size></indent>\r\nExample:\r\n<indent=20px><size=\"30\"><color=#8DB8DF>\r\nint
+    nilai[] = new int[5];\r\n</color></size></indent>\n<indent=20px><size=\"30\"><color=#8DB8DF>\r\n-
+    `DataType`: Specifies the type of data to be stored in the array.\r\n- `varArray`:
+    Is the reference variable name for the array. It's freely chosen but follows
+    the rules for identifiers.\r\n- `[]` and `new DataType`: Indicates creating a
+    one-dimensional array.\r\n- `[sizeArray]`: Specifies the size of the array space
+    to be reserved in memory.\r\n\r</color></size></indent>\n2. The second declaration
+    method:\r\n<indent=20px><size=\"30\"><color=#8DB8DF>\r\nDataType varArray[] =
+    {dataArray};\r\n</color></size></indent>\r\nExample:\r\n<indent=20px><size=\"30\"><color=#8DB8DF>\r\nint
+    nilai[] = {3, 5, 1, 10, 17};\r\n</color></size></indent>\n<indent=20px><size=\"30\"><color=#8DB8DF>\r\n-
+    `DataType`: Specifies the type of data to be stored in the array.\r\n- `varArray`:
+    Is the reference variable name for the array. It's freely chosen but follows
+    the rules for identifiers.\r\n- `[]`: Indicates creating a one-dimensional array.\r\n-
+    `{dataArray}`: Indicates the data content and the size of the array stored in
+    memory.\r\n- In the example, the size of the array is 5. Accessing index 0 is
+    done with `nilai[0]`. The address of the data 10 is at index 3.\r\n\r</color></size></indent>\nTo
+    manipulate array data, loop statements are used.\n\n<style=\"Title\">Array 2
+    Dimention</style>\nThe representation of data storage in a two-dimensional array
+    is in the form of a table, meaning it has rows and columns. The storage addresses
+    in a two-dimensional array are called cells, which are the intersections of rows
+    and columns. Cells in a two-dimensional array start from memory address (0,0)
+    and go up to memory address (sizeRow-1,sizeColumn-1). There are two ways to declare
+    a two-dimensional array:\n\r\n1. The first declaration method:\r\n<indent=20px><size=\"30\"><color=#8DB8DF>\r\nDataType
+    varArray[][] = new DataType[row][column];\r\n</color></size></indent>\r\nExample:\r\n<indent=20px><size=\"30\"><color=#8DB8DF>\r\nint
+    nilai[][] = new int[3][4];\r\n</color></size></indent>\n<indent=20px><size=\"30\"><color=#8DB8DF>\r\n-
+    `DataType`: Specifies the type of data to be stored in the array.\r\n- `varArray`:
+    Is the reference variable name for the array. It's freely chosen but follows
+    the rules for identifiers.\r\n- `[][]` and `new DataType`: Indicates creating
+    a two-dimensional array.\r\n- `[row][column]`: Specifies the size of the row
+    and column spaces of the array to be reserved in memory.\r\n\r</color></size></indent>\n2.
+    The second declaration method:\r\n<indent=20px><size=\"30\"><color=#8DB8DF>\r\nDataType
+    varArray[][] = {{data1}, {data2}};\r\n</color></size></indent>\r\nExample:\r\n<indent=20px><size=\"30\"><color=#8DB8DF>\r\nint
+    nilai[][] = {{3, 5}, {7, 6}};\r\n</color></size></indent>\n<indent=20px><size=\"30\"><color=#8DB8DF>\r\n-
+    `DataType`: Specifies the type of data to be stored in the array.\r\n- `varArray`:
+    Is the reference variable name for the array. It's freely chosen but follows
+    the rules for identifiers.\r\n- `[][]`: Indicates creating a two-dimensional
+    array.\r\n- `{{data1}, {data2}}`: Indicates the data content and the size of
+    the array stored in memory.\r\n- In the example, the size of the array is rows
+    = 2 and columns = 2. Accessing the array at cell 0,0 is done with `nilai[0][0]`.
+    The address of the data 7 is at cell (1,0).\r\n\r</color></size></indent>\nTo
+    manipulate array data, nested loop statements are used."
   - "<style=\"Title\">Exception Handling</style>\nAn Exception is an unusual or abnormal
     event that occurs while running a program. It is a runtime error. When an Exception
     occurs, it throws an Exception object. If this thrown object is not handled or
@@ -847,16 +743,276 @@ MonoBehaviour:
     not exist. One try-catch block has only one finally block. The finally block
     is accessed in the last sequence within the try..catch..finally command. The
     finally block is accessed regardless of whether there is an Exception.\r\n\r\nExample
-    usage of Try Catch and Finally:\r\n```java\r\npublic class ArrayException {\r\n   
-    public static void main (String[] args) {\r\n        try {\r\n            System.out.println(\"Your
-    name is \" + args[0]);\r\n        } catch (ArrayIndexOutOfBoundsException obj)
-    {\r\n            System.out.println(\"Run the code with the argument\");\r\n       
-    } finally {\r\n            System.out.println(\"Your school is Politeknik Caltex
-    Riau\");\r\n        }\r\n    }\r\n}\r\n```\r\n\r\nIn this example:\r\n- The try
-    block attempts to print the first command line argument.\r\n- If no argument
-    is provided, it catches the ArrayIndexOutOfBoundsException and prints a message.\r\n-
-    The finally block always executes, regardless of whether an Exception occurs
-    or not. It prints a message indicating the school name."
+    usage of Try Catch and Finally:\r\n<size=\"30\"><color=#8DB8DF>\r\npublic class
+    ArrayException {\r\n    public static void main (String[] args) {\r\n       
+    try {\r\n            System.out.println(\"Your name is \" + args[0]);\r\n       
+    } catch (ArrayIndexOutOfBoundsException obj) {\r\n            System.out.println(\"Run
+    the code with the argument\");\r\n        } finally {\r\n            System.out.println(\"Your
+    school is Politeknik Caltex Riau\");\r\n        }\r\n    }\r\n}\r\n</color></size>\r\n\r\nIn
+    this example:\r\n- The try block attempts to print the first command line argument.\r\n-
+    If no argument is provided, it catches the ArrayIndexOutOfBoundsException and
+    prints a message.\r\n- The finally block always executes, regardless of whether
+    an Exception occurs or not. It prints a message indicating the school name."
+  materialTitleID:
+  - Panduan Unit 1
+  - Panduan Unit 2
+  - Panduan Unit 3
+  - Panduan Unit 4
+  - Panduan Unit 5
+  - Panduan Unit 6
+  materialDescID:
+  - Belajar Variable dan Tipe Data
+  - Belajar Cara Menggunakan Operator
+  - Belajar Cara Menggunakan Input/Output
+  - Belajar Penggunaan Selection and Iteration
+  - Belajar Membuat dan Memakai Array
+  - Belajar Exception Handling
+  materialPointID:
+  - "<style=\"Title\">Variable</style>\n\nVariabel adalah wakil dari suatu data atau
+    objek. Variabel dikenal lewat\r\nsuatu identifier. Melalui identifier inilah
+    data atau objek dapat diolah.\r\nVariabel dalam Java dapat dibagi menjadi dua
+    jenis:\n\n<indent=20px><size=\"30\"><color=#8DB8DF>\u2022Tipe data primitive
+    adalah tipe data yang mempunyai nilai tertentu,\r\nbukan refernsi class atau
+    objek tertentu.</color></size></indent>\r\n\n<indent=20px><size=\"30\"><color=#8DB8DF>\u2022tipe
+    data references\r\nadalah tipe data yang merujuk kepada objek, yaitu suatu library
+    yang\r\nterdiri dari data ataupun method\r\n</color></size></indent>\n\nDeklarasi
+    variabel memberitahu kepada compiler Java, bahwa program\r\nini menggunakan variabel
+    dengan tipe data tertentu.\n\nSyntax:\r\n\rTipe_data nama_variabel;\r\n\nExample:\r\nint
+    nilai;\r\r\n\nint adalah tipe data untuk mengolah bilangan bulat\r\nnilai adalah
+    nama variabelnya\n\n<style=\"Title\">TIpe Data</style>\n\nBerdasarkan tipe datanya,
+    tipe data primitive dapat dikelompokkan\r\nmenjadi empat:\r\n\r\n<indent=20px><size=\"30\"><color=#8DB8DF>1.
+    Tipe data integer atau bilangan bulat: byte, short, int , long</color></size></indent>\r\n<indent=20px><size=\"30\"><color=#8DB8DF>2.
+    Tipe data float atau bilangan nyata (real): float, double</color></size></indent>\r\n<indent=20px><size=\"30\"><color=#8DB8DF>3.
+    Tipe data char atau karakter: char</color></size></indent>\r\n<indent=20px><size=\"30\"><color=#8DB8DF>4.
+    Tipe data boolean: Boolean</color></size></indent>\n"
+  - "<style=\"Title\">Operator</style>\n\nOperator digunakan untuk melakukan pengolahan
+    data. Biasaya,\r\noperator melibatkan variabel dan/atau konstanta yang telah
+    dibuat\r\nsebelumnya.\r\nAdapun jenis-jenis operator adalah sebagai berikut:\n\n\n1.
+    Unary: memerlukan satu operand\r\nContoh: a++\n\n\n2. Binary: memerlukan dua
+    operand\r\nContoh: a + b\n\n\n3. Ternary: memerlukan tiga operand\r\nContoh:
+    a ? b : c\r c\n\n<style=\"Title\">Operator Aritmatika</style>\nBerikut ini adalah
+    daftar operator aritmatika:\n\n1. Penambahan (+): Digunakan untuk penambahan.\r\n2.
+    Pengurangan (-): Digunakan untuk pengurangan.\r\n3. Perkalian (*): Digunakan
+    untuk perkalian.\r\n4. Pembagian (/): Digunakan untuk pembagian.\r\n5. Modulus
+    (%): Mengembalikan sisa dari sebuah pembagian.\n\n<style=\"Title\">Operator Relasional</style>\nOperator
+    ini membandingkan dua nilai, dan kemudian operasinya\r\nmenghasilkan nilai boolean
+    (true/false). Berikut ini adalah tabel operator\r\nrelasional:\n\n1. Lebih besar
+    dari (>): Mengembalikan true jika op1 lebih besar dari op2.\r\n2. Lebih besar
+    dari atau sama dengan (>=): Mengembalikan true jika op1 lebih besar dari atau
+    sama dengan op2.\r\n3. Lebih kecil dari (<): Mengembalikan true jika op1 lebih
+    kecil dari op2.\r\n4. Lebih kecil dari atau sama dengan (<=): Mengembalikan true
+    jika op1 lebih kecil dari atau sama dengan op2.\r\n5. Sama dengan (==): Mengembalikan
+    true jika op1 sama dengan op2.\r\n6. Tidak sama dengan (!=): Mengembalikan true
+    jika op1 tidak sama dengan op2.\n\n<style=\"Title\">Operator Kondisional</style>\nOperator
+    ini akan mengoperasikan secara logika dua operand yang\r\nbertipe boolean. Bisa
+    dikatakan juga, operator ini menghubungkan 2\r\noperator relasional. Adapun daftar
+    operator kondisional adalah sebagai\r\nberikut ini:\n\n1. Logical AND (&&): Mengembalikan
+    true jika kedua op1 dan op2 adalah true. Op2 tidak akan dievaluasi jika op1 adalah
+    false.\r\n2. Logical OR (||): Mengembalikan true jika salah satu dari op1 atau
+    op2 adalah true. Op2 tidak akan dievaluasi jika op1 adalah true.\r\n3. Logical
+    NOT (!): Mengembalikan true jika op1 adalah false, dan sebaliknya.\n\n<style=\"Title\">Operator
+    Shift and Bitwise</style>\nOperator shift digunakan untuk melakukan pergeseran
+    bit. Adapun daftar\r\noperator shift adalah sebagai berikut.\n\n1. Pergeseran
+    kanan (>>): Menggeser bit dari op1 ke kanan sebanyak posisi op2.\r\n2. Pergeseran
+    kiri (<<): Menggeser bit dari op1 ke kiri sebanyak posisi op2.\r\n3. Pergeseran
+    kanan tanpa tanda (>>>): Menggeser bit dari op1 ke kanan sebanyak posisi op2,
+    mengisi bit paling kiri dengan nol.\n\n<style=\"Title\">Operator Penugasan</style>\nPada
+    dasarnya adalah operator yang menggunakan tanda sama dengan.\r\nAdapun bentuk
+    operator penugasan adalah sebagai berikut\n\n1. Penambahan penugasan (+=): Menambahkan
+    op2 ke op1 dan mengassign hasilnya ke op1.\r\n2. Pengurangan penugasan (-=):
+    Mengurangkan op2 dari op1 dan mengassign hasilnya ke op1.\r\n3. Perkalian penugasan
+    (*=): Mengalikan op1 dengan op2 dan mengassign hasilnya ke op1.\r\n4. Pembagian
+    penugasan (/=): Membagi op1 dengan op2 dan mengassign hasilnya ke op1.\r\n5.
+    Modulus penugasan (%=): Menghitung sisa pembagian op1 dibagi op2 dan mengassign
+    hasilnya ke op1.\r\n6. Penugasan AND bitwise (&=): Melakukan operasi AND bitwise
+    antara op1 dan op2 dan mengassign hasilnya ke op1.\r\n7. Penugasan OR bitwise
+    (|=): Melakukan operasi OR bitwise antara op1 dan op2 dan mengassign hasilnya
+    ke op1.\r\n8. Penugasan XOR bitwise (^=): Melakukan operasi XOR bitwise antara
+    op1 dan op2 dan mengassign hasilnya ke op1.\r\n9. Penugasan pergeseran kiri (<<=):
+    Menggeser bit dari op1 ke kiri sebanyak posisi yang ditentukan oleh op2 dan mengassign
+    hasilnya ke op1.\r\n10. Penugasan pergeseran kanan (>>=): Menggeser bit dari
+    op1 ke kanan sebanyak posisi yang ditentukan oleh op2 dan mengassign hasilnya
+    ke op1.\r\n11. Penugasan pergeseran kanan tanpa tanda (>>>=): Menggeser bit dari
+    op1 ke kanan sebanyak posisi yang ditentukan oleh op2 (tanpa tanda) dan mengassign
+    hasilnya ke op1."
+  - '<style="Title">Input/Output</style>
+
+    Untuk membuat program lebih dinamis
+    dalam hal memberikan nilai
+
+    kepada variabel, maka kita dapat melakukannya
+    dengan menggunakan
+
+    fungsi input/output yang ada pada bahasa pemograman Java.
+    Dasar
+
+    untuk melakukan fungsi input/output memiliki 2 jenis, yaitu melalui
+
+    console
+    dan kotak dialog.
+
+
+
+    1.  Console Input/Output: Ini melibatkan interaksi dengan
+    pengguna melalui antarmuka baris perintah (CLI). Anda dapat menggunakan kelas
+    seperti Scanner untuk masukan dan System.out.println() untuk keluaran.
+
+
+
+    2.
+    Dialog Box Input/Output: Ini melibatkan menampilkan kotak dialog grafis untuk
+    berinteraksi dengan pengguna. Anda dapat menggunakan kelas seperti JOptionPane
+    untuk kotak dialog masukan dan keluaran.'
+  - "\r<style=\"Title\">Control Statement</style>\r\nKadang-kadang, penyelesaian
+    masalah membutuhkan logika agar solusi yang diberikan secara akurat mengatasi
+    masalah yang ada. Logika dapat melibatkan kondisi seperti \"ya\" atau \"tidak\",
+    atau bahkan memerlukan proses yang berulang. Dalam penyelesaian masalah menggunakan
+    bahasa pemrograman, ini disebut sebagai pernyataan kontrol.\r\n\r\n<style=\"Title\">Percabangan
+    (Selection)</style>\r\n1. Pernyataan If\r\nPernyataan if adalah bentuk paling
+    sederhana dari percabangan kondisional. Ini menjalankan blok kode hanya jika
+    kondisinya dievaluasi sebagai true. Sintaksnya sebagai berikut:\r\n\r\n\r\nif
+    (kondisi) {\r\n    // kode yang akan dieksekusi jika kondisinya benar\r\n}\r\nContoh:\r\n\r\nif
+    (nilai > 60) {\r\n    System.out.println(\"lulus\");\r\n}\r\nPernyataan if ini
+    akan mencetak \"lulus\" ke konsol jika nilai dari variabel 'nilai' lebih besar
+    dari 60.\r\n\r\n2. Pernyataan If..Else\r\nPernyataan if..else mewakili struktur
+    percabangan di mana pernyataan pertama dieksekusi jika kondisinya benar. Namun,
+    jika kondisinya dievaluasi sebagai false, maka pernyataan kedua (else) dieksekusi.\r\n\r\nSintaks:\r\n\r\n\r\nif
+    (kondisi) {\r\n    // kode yang akan dieksekusi jika kondisinya benar\r\n} else
+    {\r\n    // kode yang akan dieksekusi jika kondisinya salah\r\n}\r\nContoh:\r\n\r\nif
+    (nilai > 60) {\r\n    System.out.println(\"lulus\");\r\n} else {\r\n    System.out.println(\"gagal\");\r\n}\r\nDalam
+    contoh ini, jika nilai dari variabel 'nilai' lebih besar dari 60, akan mencetak
+    \"lulus\" ke konsol. Jika tidak, akan mencetak \"gagal\".\r\n\r\n3. Pernyataan
+    Switch..Case\r\nPernyataan switch..case direkomendasikan ketika terdapat banyak
+    pilihan dalam struktur percabangan dibandingkan dengan menggunakan beberapa pernyataan
+    if. Ini umumnya digunakan ketika terdapat beberapa opsi berdasarkan nilai dari
+    satu variabel.\r\n\r\nSintaks:\r\n\r\n\r\nswitch (identitas) {\r\n    case nilai1:\r\n       
+    // kode yang akan dieksekusi jika identitas sama dengan nilai1\r\n        break;\r\n   
+    case nilai2:\r\n        // kode yang akan dieksekusi jika identitas sama dengan
+    nilai2\r\n        break;\r\n    default:\r\n        // kode yang akan dieksekusi
+    jika tidak ada salah satu dari kasus yang cocok\r\n        break;\r\n}\r\n\r\nDalam
+    setiap kasus, gunakan kata kunci break untuk memisahkan satu kondisi dari yang
+    lain. Kasus default digunakan untuk ketika tidak ada salah satu dari kasus yang
+    ditentukan cocok dengan nilai dari identitas.\r\n\r\nContoh:\r\n\r\n\r\nint hari
+    = 2;\r\nswitch (hari) {\r\n    case 1:\r\n        System.out.println(\"Senin\");\r\n       
+    break;\r\n    case 2:\r\n        System.out.println(\"Selasa\");\r\n        break;\r\n   
+    case 3:\r\n        System.out.println(\"Rabu\");\r\n        break;\r\n    default:\r\n       
+    System.out.println(\"Hari tidak diketahui\");\r\n        break;\r\n}\r\n\r\nDalam
+    contoh ini, jika nilai dari variabel hari adalah 2, akan mencetak \"Selasa\"
+    ke konsol. Jika hari tidak cocok dengan salah satu dari kasus yang ditentukan,
+    akan mencetak \"Hari tidak diketahui\".\r\n\r\n<style=\"Title\">Perulangan (Iteration)</style>\r\nPengulangan
+    adalah proses yang memerlukan eksekusi yang berulang. Kondisi untuk melakukan
+    pengulangan ini adalah nilai awal, batas eksekusi pengulangan, dan langkah pengulangan
+    itu sendiri.\r\n\r\n1. While\r\nPernyataan while dimulai dengan mengevaluasi
+    apakah suatu kondisi benar atau salah. Jika benar, pernyataan dieksekusi, dan
+    program mengevaluasi kembali kondisi untuk kebenaran atau kekeliruan. Proses
+    ini terus berlanjut sampai kondisi menjadi salah. Jika kondisinya salah, pernyataan
+    dilewati, dan kondisinya tidak dievaluasi lagi. Dengan kata lain, pernyataan
+    akan dieksekusi berulang-ulang selama kondisinya tetap benar.\r\n\r\nSintaks:\r\n\r\n\r\nnilai_awal\r\nwhile
+    (kondisi) {\r\n    // kode yang akan dieksekusi jika kondisinya benar\r\n   
+    // langkah_while;\r\n}\r\n\r\nContoh:\r\n\r\n\r\nint i = 1;\r\nwhile (i <= 10)
+    {\r\n    System.out.println(\"belajar java\");\r\n    i++;\r\n}\r\n\r\nDalam
+    contoh ini, program akan mencetak \"belajar java\" ke konsol secara berulang-ulang
+    selama nilai i kurang dari atau sama dengan 10. Nilai i diinisialisasi dengan
+    1, dan nilainya ditambah 1 setiap iterasi pengulangan.\r\n\r\n2. Do..While\r\nLoop
+    do..while mirip dengan loop while. Perbedaannya adalah bahwa loop do..while akan
+    selalu mengeksekusi pernyataan setidaknya sekali. Jadi, bahkan jika kondisinya
+    tidak terpenuhi, pernyataan di dalam loop akan tetap dieksekusi sekali.\r\n\r\nSintaks:\r\n\r\n\r\nnilai_awal\r\ndo
+    {\r\n    // kode yang akan dieksekusi jika kondisinya benar\r\n    // langkah_doWhile;\r\n}
+    while (kondisi);\r\n\r\nContoh:\r\n\r\n\r\nint i = 1;\r\ndo {\r\n    System.out.println(\"belajar
+    java\");\r\n    i++;\r\n} while (i <= 10);\r\n\r\nDalam contoh ini, program akan
+    mencetak \"belajar java\" ke konsol setidaknya sekali, bahkan jika nilai i pada
+    awalnya tidak kurang dari atau sama dengan 10. Kemudian, akan terus mencetak
+    \"belajar java\" secara berulang-ulang selama nilai i kurang dari atau sama dengan
+    10.\r\n\r\n3. For\r\nLoop for digunakan ketika jumlah iterasi loop sudah diketahui
+    sebelumnya.\r\n\r\nSintaks:\r\n\r\n\r\nfor (nilai_awal; kondisi; langkah_for)
+    {\r\n    // kode yang akan dieksekusi jika kondisinya benar\r\n}\r\n\r\nContoh:\r\n\r\n\r\nfor
+    (int i = 1; i <= 10; i++) {\r\n    System.out.println(\"belajar java\");\r\n}\r\n\r\nDalam
+    contoh ini, pengulangan akan dilakukan dari i = 1 hingga i = 10, mencetak \"belajar
+    java\" ke konsol dalam setiap iterasi. Loop menginisialisasi i dengan 1, memeriksa
+    apakah i kurang dari atau sama dengan 10, dan menambahkan i sebanyak 1 pada setiap
+    iterasi.\r"
+  - "\r<style=\"Title\">Array</style>\r\n\r\nArray adalah struktur data dengan karakteristik
+    berikut:\r\n\r\n1. Mereka adalah kumpulan variabel yang membentuk urutan penyimpanan
+    sementara. Variabel-variabel ini memiliki jenis data dan nama yang sama tetapi
+    dibedakan oleh alamat mereka.\r\n\r\n2. Panjang array tetap sama seperti saat
+    pertama kali didefinisikan.\r\n\r\n3. Variabel yang menyimpan array adalah tipe
+    data referensi, yang berarti itu menyimpan referensi ke objek array. Referensi
+    dalam array terlampir pada variabel, menjadikannya variabel referensi.\r\n\r\n4.
+    Variabel referensi berisi alamat memori objek array.\r\n\r\n<style=\"Title\">Array
+    1 Dimensi</style>\r\n\r\nRepresentasi penyimpanan data dalam array satu dimensi
+    adalah linear atau lurus. Alamat penyimpanan dalam array satu dimensi disebut
+    indeks. Indeks dalam sebuah array dimulai dari alamat memori 0 dan berlanjut
+    hingga alamat memori ukuran-1. Ada dua cara untuk mendeklarasikan array satu
+    dimensi:\r\n\r\n1. Metode deklarasi pertama:\r\n<indent=20px><size=\"30\"><color=#8DB8DF>\r\nTipeData
+    varArray[] = new TipeData[ukuranArray];\r\n</color></size></indent>\r\nContoh:\n<indent=20px><size=\"30\"><color=#8DB8DF>\r\nint
+    nilai[] = new int[5];\r\n</color></size></indent>\n\n<indent=20px><size=\"30\"><color=#8DB8DF>\r\n-
+    `TipeData`: Menentukan jenis data yang akan disimpan dalam array.\r\n- `varArray`:
+    Adalah nama variabel referensi untuk array. Ini bebas dipilih tetapi mengikuti
+    aturan untuk pengidentifikasi.\r\n- `[]` dan `new TipeData`: Menunjukkan pembuatan
+    array satu dimensi.\r\n- `[ukuranArray]`: Menentukan ukuran ruang array yang
+    akan dipesan di memori.\n</color></size></indent>\r\n\r\n2. Metode deklarasi
+    kedua:\r\n<indent=20px><size=\"30\"><color=#8DB8DF>\r\nTipeData varArray[] =
+    {dataArray};\r\n</color></size></indent>\r\nContoh:\r\n<indent=20px><size=\"30\"><color=#8DB8DF>\r\nint
+    nilai[] = {3, 5, 1, 10, 17};\r\n</color></size></indent>\n\n<indent=20px><size=\"30\"><color=#8DB8DF>\r\n-
+    `TipeData`: Menentukan jenis data yang akan disimpan dalam array.\r\n- `varArray`:
+    Adalah nama variabel referensi untuk array. Ini bebas dipilih tetapi mengikuti
+    aturan untuk pengidentifikasi.\r\n- `[]`: Menunjukkan pembuatan array satu dimensi.\r\n-
+    `{dataArray}`: Menunjukkan konten data dan ukuran array yang disimpan di memori.\r\n-
+    Dalam contoh, ukuran array adalah 5. Mengakses indeks 0 dilakukan dengan `nilai[0]`.
+    Alamat data 10 berada di indeks 3.\n</color></size></indent>\r\n\r\nUntuk memanipulasi
+    data array, pernyataan loop digunakan.\r\n\r\n<style=\"Title\">Array 2 Dimensi</style>\r\n\r\nRepresentasi
+    penyimpanan data dalam array dua dimensi berbentuk tabel, artinya memiliki baris
+    dan kolom. Alamat penyimpanan dalam array dua dimensi disebut sel, yang merupakan
+    perpotongan baris dan kolom. Sel dalam array dua dimensi dimulai dari alamat
+    memori (0,0) dan berlanjut hingga alamat memori (ukuranBaris-1,ukuranKolom-1).
+    Ada dua cara untuk mendeklarasikan array dua dimensi:\r\n\r\n1. Metode deklarasi
+    pertama:\r\n<indent=20px><size=\"30\"><color=#8DB8DF>\r\nTipeData varArray[][]
+    = new TipeData[baris][kolom];\r\n</color></size></indent>\r\nContoh:\r\n<indent=20px><size=\"30\"><color=#8DB8DF>\r\nint
+    nilai[][] = new int[3][4];\r\n</color></size></indent>\n\n<indent=20px><size=\"30\"><color=#8DB8DF>\r\n-
+    `TipeData`: Menentukan jenis data yang akan disimpan dalam array.\r\n- `varArray`:
+    Adalah nama variabel referensi untuk array. Ini bebas dipilih tetapi mengikuti
+    aturan untuk pengidentifikasi.\r\n- `[][]` dan `new TipeData`: Menunjukkan pembuatan
+    array dua dimensi.\r\n- `[baris][kolom]`: Menentukan ukuran ruang baris dan kolom
+    dari array yang akan dipesan di memori.\r\n\r</color></size></indent>\n\n2. Metode
+    deklarasi kedua:\r\n<indent=20px><size=\"30\"><color=#8DB8DF>\r\nTipeData varArray[][]
+    = {{data1}, {data2}};\r\n</color></size></indent>\r\nContoh:\r\n<indent=20px><size=\"30\"><color=#8DB8DF>\r\nint
+    nilai[][] = {{3, 5}, {7, 6}};\r\n</color></size></indent>\n\r\n<indent=20px><size=\"30\"><color=#8DB8DF>\n-
+    `TipeData`: Menentukan jenis data yang akan disimpan dalam array.\r\n- `varArray`:
+    Adalah nama variabel referensi untuk array. Ini bebas dipilih tetapi mengikuti
+    aturan untuk pengidentifikasi.\r\n- `[][]`: Menunjukkan pembuatan array dua dimensi.\r\n-
+    `{{data1}, {data2}}`: Menunjukkan konten data dan ukuran array yang disimpan
+    di memori.\r\n- Dalam contoh, ukuran array adalah baris = 2 dan kolom = 2. Mengakses
+    array di sel 0,0 dilakukan dengan `nilai[0][0]`. Alamat data 7 berada di sel
+    (1,0).\r\n\r</color></size></indent>\n\nUntuk memanipulasi data array, pernyataan
+    loop bersarang digunakan.\r"
+  - "\r<style=\"Title\">Penanganan Exception</style>\r\n\r\nSebuah Exception adalah
+    kejadian yang tidak biasa atau abnormal yang terjadi saat menjalankan program.
+    Ini adalah kesalahan waktu eksekusi. Ketika sebuah Exception terjadi, itu melempar
+    objek Exception. Jika objek yang dilemparkan ini tidak ditangani atau ditangkap,
+    itu akan mengakibatkan terminasi program (berhenti), yang dapat membuat program
+    menjadi tidak dapat diandalkan. Untuk menangani ini, penanganan Exception diperlukan.
+    Exception memiliki beberapa subclass, dan setiap subclass Exception dilemparkan
+    untuk alasan tertentu. Penanganan Exception diimplementasikan dalam Java menggunakan
+    kata kunci:\r\n\r\n1. Perintah try\r\nBlok try digunakan untuk menempatkan kode
+    yang mungkin melemparkan Exception.\r\n\r\n2. Perintah try..catch\r\nBlok catch
+    digunakan sebagai penangan Exception; blok ini menangkap Exception yang dilemparkan
+    dalam blok try. Blok catch digunakan untuk menentukan jenis Exception yang akan
+    ditangani. Setidaknya satu blok try memiliki satu blok catch, sehingga satu blok
+    try dapat memiliki lebih dari satu blok catch. Ini dapat terjadi jika ada beberapa
+    Exception yang dilemparkan dalam blok try.\r\n\r\n3. Perintah try..catch..finally\r\nBlok
+    finally bersifat opsional; itu mungkin ada atau tidak. Satu blok try-catch hanya
+    memiliki satu blok finally. Blok finally diakses dalam urutan terakhir dalam
+    perintah try..catch..finally. Blok finally diakses terlepas dari apakah ada Exception.\r\n\r\nContoh
+    penggunaan Try Catch dan Finally:\r\n<size=\"30\"><color=#8DB8DF>\r\npublic class
+    ArrayException {\r\n    public static void main (String[] args) {\r\n       
+    try {\r\n            System.out.println(\"Your name is \" + args[0]);\r\n       
+    } catch (ArrayIndexOutOfBoundsException obj) {\r\n            System.out.println(\"Run
+    the code with the argument\");\r\n        } finally {\r\n            System.out.println(\"Your
+    school is Politeknik Caltex Riau\");\r\n        }\r\n    }\r\n}\r\n</color></size>\r\n\r\nDalam
+    contoh ini:\r\n- Blok try mencoba mencetak argumen baris perintah pertama.\r\n-
+    Jika tidak ada argumen yang diberikan, ia menangkap ArrayIndexOutOfBoundsException
+    dan mencetak pesan.\r\n- Blok finally selalu dieksekusi, terlepas dari apakah
+    Exception terjadi atau tidak. Ini mencetak pesan yang menunjukkan nama sekolah.\r"
 --- !u!1 &317241219
 GameObject:
   m_ObjectHideFlags: 0
@@ -1116,6 +1272,138 @@ MonoBehaviour:
   learnDesc: {fileID: 317241221}
   textContentPlace: {fileID: 1075117756}
   textContent: {fileID: 141865222}
+--- !u!1 &914163495
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 914163496}
+  - component: {fileID: 914163499}
+  - component: {fileID: 914163498}
+  - component: {fileID: 914163497}
+  m_Layer: 5
+  m_Name: ExitBtn
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &914163496
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 914163495}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 110395894}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 652, y: -87}
+  m_SizeDelta: {x: 46, y: 54}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &914163497
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 914163495}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 914163498}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 861445105}
+        m_TargetAssemblyTypeName: ReadManager, Assembly-CSharp
+        m_MethodName: Exit
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &914163498
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 914163495}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 70e0bedcc6dfe3a4b8c96c61207a1f52, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &914163499
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 914163495}
+  m_CullTransparentMesh: 1
 --- !u!1 &984358707
 GameObject:
   m_ObjectHideFlags: 0

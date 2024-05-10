@@ -3,6 +3,8 @@ using TMPro;
 using UnityEngine.SceneManagement;
 using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
+using UnityEngine.Localization.Settings;
 
 public class QuizManager : MonoBehaviour
 {
@@ -81,6 +83,7 @@ public class QuizManager : MonoBehaviour
                 options[i].GetComponent<AnswerScript>().isCorrect = false;
                 options[i].GetComponent<AnswerScript>().isArrange = false;
                 options[i].transform.GetChild(0).GetComponent<TMP_Text>().text = unansweredQuestion[currentQuestion].Answers[i];
+                options[i].GetComponent<Image>().color = Color.white;
                 if (unansweredQuestion[currentQuestion].CorrectAnswer == i)
                 {
                     options[i].GetComponent<AnswerScript>().isCorrect = true;
@@ -113,6 +116,11 @@ public class QuizManager : MonoBehaviour
             Debug.Log("array: " + storedArr[i]);
         }
         return storedArr;
+    }
+
+    public void ResetStoredList()
+    {
+        storedList.Clear();
     }
 
     public bool CheckArrangement(string[] userArrange)
@@ -178,16 +186,44 @@ public class QuizManager : MonoBehaviour
             currentUnit = "Unit " + incrementUnit.ToString();
         }
 
-        if (QuizData.Questions.ContainsKey(currentUnit))
+        if (LocalizationSettings.SelectedLocale == LocalizationSettings.AvailableLocales.Locales[0])
         {
-            Question = QuizData.Questions[currentUnit];
-            Debug.Log("Number of questions in the list: " + Question.Count);
-            unansweredQuestion = new List<QuestionAnswer>(Question);
-            GenerateQuestion();
+            if (QuizData.Questions.ContainsKey(currentUnit))
+            {
+                Question = QuizData.Questions[currentUnit];
+                Debug.Log("Number of questions in the list: " + Question.Count);
+                unansweredQuestion = new List<QuestionAnswer>(Question);
+                GenerateQuestion();
+            }
+            else
+            {
+                Debug.LogError("Unit not found in the dictionary.");
+            }
         }
         else
         {
-            Debug.LogError("Unit not found in the dictionary.");
+            if (QuizData.QuestionsID.ContainsKey(currentUnit))
+            {
+                Question = QuizData.QuestionsID[currentUnit];
+                Debug.Log("Number of questions in the list: " + Question.Count);
+                unansweredQuestion = new List<QuestionAnswer>(Question);
+                GenerateQuestion();
+            }
+            else
+            {
+                Debug.LogError("Unit not found in the dictionary.");
+            }
+        }
+    }
+
+    public void Exit()
+    {
+        if (PlayerPrefs.GetInt("LearnUnit", -1) >= 0)
+        {
+            SceneManager.LoadScene("ReadMaterial");
+        } else
+        {
+            SceneManager.LoadScene("ChooseDifficulty");
         }
     }
 }

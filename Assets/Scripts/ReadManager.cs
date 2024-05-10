@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Localization.Settings;
 using UnityEngine.SceneManagement;
 
 public class ReadManager : MonoBehaviour
@@ -17,9 +18,17 @@ public class ReadManager : MonoBehaviour
 
         int unit = PlayerPrefs.GetInt("LearnUnit");
 
-        unitTitle.text = materialData.materialTitle[unit];
-        learnDesc.text = materialData.materialDesc[unit];
-        textContent.text = materialData.materialPoint[unit];
+        if(LocalizationSettings.SelectedLocale == LocalizationSettings.AvailableLocales.Locales[0])
+        {
+            unitTitle.text = materialData.materialTitle[unit];
+            learnDesc.text = materialData.materialDesc[unit];
+            textContent.text = materialData.materialPoint[unit];
+        } else
+        {
+            unitTitle.text = materialData.materialTitleID[unit];
+            learnDesc.text = materialData.materialDescID[unit];
+            textContent.text = materialData.materialPointID[unit];
+        }
 
         // Calculate preferred height
         float preferredHeight = textContent.preferredHeight;
@@ -32,5 +41,10 @@ public class ReadManager : MonoBehaviour
     public void PlayTest()
     {
         SceneManager.LoadScene("Test");
+    }
+
+    public void Exit()
+    {
+        SceneManager.LoadScene("MainMenu");
     }
 }

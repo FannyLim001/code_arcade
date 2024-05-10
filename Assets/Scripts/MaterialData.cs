@@ -8,4 +8,8 @@ public class MaterialData : MonoBehaviour
     public string[] materialDesc;
     [TextArea(50, 255)]
     public string[] materialPoint;
+    public string[] materialTitleID;
+    public string[] materialDescID;
+    [TextArea(50, 255)]
+    public string[] materialPointID;
 }
