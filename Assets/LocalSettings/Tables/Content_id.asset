@@ -67,6 +67,10 @@ MonoBehaviour:
     m_Localized: Selanjutnya
     m_Metadata:
       m_Items: []
+  - m_Id: 20373636621340672
+    m_Localized: Latihan
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

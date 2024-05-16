@@ -123,6 +123,11 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene("ReadMaterial");
     }
 
+    public void Practice()
+    {
+        SceneManager.LoadScene("Practice");
+    }
+
     public void Back()
     {
         SceneManager.LoadScene("StartMenu");

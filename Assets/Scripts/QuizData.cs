@@ -36,6 +36,92 @@ public static class QuizData
             }
         },
         {
+            "Practice", new List<QuestionAnswer> {
+                new QuestionAnswer {
+                    QuestionType = "Complete This Code",
+                    QuestionText = "public class Main {\r\n  public static void main(String[] args) {\r\n    ____________ x = 5;\r\n    System.out.println(x);\r\n  }\r\n}",
+                    Answers = new string[] { "int", "String", "double", "float" },
+                    CorrectAnswer = 0,
+                    IsMultipleChoice = true
+                },
+                new QuestionAnswer {
+                    QuestionType = "Find a bug in this code",
+                    QuestionText = "public class Main {\r\n  public static void main(String[] args) {\r\n    int x = 5;\r\n    String y = \"Hello\";\r\n    System.out.println(x + y);\r\n  }\r\n}",
+                    Answers = new string[] { "x + y", "String y", "int x = 5;", "System.out.println" },
+                    CorrectAnswer = 0,
+                    IsMultipleChoice = true
+                },
+                new QuestionAnswer {
+                    QuestionType = "What is the output?",
+                    QuestionText = "import java.util.Scanner;\r\npublic class Main {\r\n  public static void main(String[] args) {\r\n    Scanner scanner = new Scanner(System.in);\r\n    System.out.print(\"Enter a number: \");\r\n    int x = scanner.nextInt();\r\n    System.out.println(\"You entered: \" + x);\r\n  }\r\n}",
+                    Answers = new string[] { "Enter a number: You entered: 5", "You entered: 5", "Enter a number: 5", "Enter a number: You entered:" },
+                    CorrectAnswer = 2,
+                    IsMultipleChoice = true
+                },
+                new QuestionAnswer {
+                    QuestionType = "Arrange this code",
+                    Answers = new string[] { "Scanner scanner = new Scanner(System.in);", "public class Main", "System.out.println(\"Enter a number:\");", "int x = scanner.nextInt();" },
+                    IsMultipleChoice = false,
+                    CorrectArrangement = new string[] { "public class Main", "Scanner scanner = new Scanner(System.in);", "System.out.println(\"Enter a number:\");", "int x = scanner.nextInt();" }
+                },
+                new QuestionAnswer {
+                    QuestionType = "Complete This Code",
+                    QuestionText = "public class Main {\r\n  public static void main(String[] args) {\r\n    int a = 10;\r\n    int b = 20;\r\n    int c = a ___________ b;\r\n    System.out.println(c);\r\n  }\r\n}",
+                    Answers = new string[] { "++", "--", "*=", "+" },
+                    CorrectAnswer = 3,
+                    IsMultipleChoice = true
+                },
+                new QuestionAnswer {
+                    QuestionType = "Find a bug in this code",
+                    QuestionText = "public class Main {\r\n  public static void main(String[] args) {\r\n    int x = 10;\r\n    int y = 5;\r\n    int z = x // y;\r\n    System.out.println(z);\r\n  }\r\n}",
+                    Answers = new string[] { "//", "x", "y", "System.out.println" },
+                    CorrectAnswer = 0,
+                    IsMultipleChoice = true
+                },
+                new QuestionAnswer {
+                    QuestionType = "What is the output?",
+                    QuestionText = "public class Main {\r\n  public static void main(String[] args) {\r\n    int x = 5;\r\n    if (x > 2) {\r\n      System.out.println(\"Greater\");\r\n    } else {\r\n      System.out.println(\"Lesser\");\r\n    }\r\n  }\r\n}",
+                    Answers = new string[] { "Greater", "Lesser", "Error", "No Output" },
+                    CorrectAnswer = 0,
+                    IsMultipleChoice = true
+                },
+                new QuestionAnswer {
+                    QuestionType = "Arrange this code",
+                    Answers = new string[] { "}", "if (x > 2) {", "public static void main(String[] args) {", "System.out.println(\"Greater\");" },
+                    IsMultipleChoice = false,
+                    CorrectArrangement = new string[] { "public static void main(String[] args) {", "if (x > 2) {", "System.out.println(\"Greater\");", "}" }
+                },
+                new QuestionAnswer {
+                    QuestionType = "Find a bug in this code",
+                    QuestionText = "public class Main {\r\n  public static void main(String[] args) {\r\n    int[] arr = {1, 2, 3, 4, 5};\r\n    System.out.println(arr[5]);\r\n  }\r\n}",
+                    Answers = new string[] { "arr[5]", "int[] arr", "System.out.println", "public static void main" },
+                    CorrectAnswer = 0,
+                    IsMultipleChoice = true
+                },
+                new QuestionAnswer {
+                    QuestionType = "What is the output?",
+                    QuestionText = "public class Main {\r\n  public static void main(String[] args) {\r\n    int[] arr = {10, 20, 30, 40, 50};\r\n    System.out.println(arr[1] + arr[4]);\r\n  }\r\n}",
+                    Answers = new string[] { "30", "50", "60", "70" },
+                    CorrectAnswer = 3,
+                    IsMultipleChoice = true
+                },
+                new QuestionAnswer {
+                    QuestionType = "Complete This Code",
+                    QuestionText = "public class Main {\r\n  public static void main(String[] args) {\r\n    try {\r\n      int[] arr = {1, 2, 3};\r\n      System.out.println(arr[3]);\r\n    } catch (____________ e) {\r\n      System.out.println(\"Array index out of bounds\");\r\n    }\r\n  }\r\n}",
+                    Answers = new string[] { "IOException", "ArrayIndexOutOfBoundsException", "NullPointerException", "Exception" },
+                    CorrectAnswer = 1,
+                    IsMultipleChoice = true
+                },
+                new QuestionAnswer {
+                    QuestionType = "Arrange this code",
+                    Answers = new string[] { "System.out.println(\"Division by zero\");", "try {", "int result = 10 / 0;", "} catch (ArithmeticException e) {" },
+                    IsMultipleChoice = false,
+                    CorrectArrangement = new string[] { "try {", "int result = 10 / 0;", "} catch (ArithmeticException e) {", "System.out.println(\"Division by zero\");" }
+                }
+                // Add more questions for PreTest as needed...
+            }
+        },
+        {
             "Unit 1", new List<QuestionAnswer> {
                 new QuestionAnswer {
                     QuestionType = "Complete This Code",
@@ -278,6 +364,92 @@ public static class QuizData
             // Add more questions for PreTest as needed...
         }
     },
+        {
+            "Practice", new List<QuestionAnswer> {
+                new QuestionAnswer {
+                    QuestionType = "Lengkapi Kode Ini",
+                    QuestionText = "public class Main {\r\n  public static void main(String[] args) {\r\n    ____________ x = 5;\r\n    System.out.println(x);\r\n  }\r\n}",
+                    Answers = new string[] { "int", "String", "double", "float" },
+                    CorrectAnswer = 0,
+                    IsMultipleChoice = true
+                },
+                new QuestionAnswer {
+                    QuestionType = "Temukan Bug di Kode Ini",
+                    QuestionText = "public class Main {\r\n  public static void main(String[] args) {\r\n    int x = 5;\r\n    String y = \"Hello\";\r\n    System.out.println(x + y);\r\n  }\r\n}",
+                    Answers = new string[] { "x + y", "String y", "int x = 5;", "System.out.println" },
+                    CorrectAnswer = 0,
+                    IsMultipleChoice = true
+                },
+                new QuestionAnswer {
+                    QuestionType = "Apa Outputnya?",
+                    QuestionText = "import java.util.Scanner;\r\npublic class Utama {\r\n  public static void main(String[] args) {\r\n    Scanner scanner = new Scanner(System.in);\r\n    System.out.print(\"Masukkan sebuah angka: \");\r\n    int x = scanner.nextInt();\r\n    System.out.println(\"Anda memasukkan: \" + x);\r\n  }\r\n}",
+                    Answers = new string[] { "Masukkan sebuah angka: Anda memasukkan: 5", "Anda memasukkan: 5", "Masukkan sebuah angka: 5", "Masukkan sebuah angka: Anda memasukkan:" },
+                    CorrectAnswer = 2,
+                    IsMultipleChoice = true
+                },
+                new QuestionAnswer {
+                    QuestionType = "Susun Kode Ini",
+                    Answers = new string[] { "Scanner scanner = new Scanner(System.in);", "public class Main", "System.out.println(\"Enter a number:\");", "int x = scanner.nextInt();" },
+                    IsMultipleChoice = false,
+                    CorrectArrangement = new string[] { "public class Main", "Scanner scanner = new Scanner(System.in);", "System.out.println(\"Enter a number:\");", "int x = scanner.nextInt();" }
+                },
+                new QuestionAnswer {
+                    QuestionType = "Lengkapi Kode Ini",
+                    QuestionText = "public class Main {\r\n  public static void main(String[] args) {\r\n    int a = 10;\r\n    int b = 20;\r\n    int c = a ___________ b;\r\n    System.out.println(c);\r\n  }\r\n}",
+                    Answers = new string[] { "++", "--", "*=", "+" },
+                    CorrectAnswer = 3,
+                    IsMultipleChoice = true
+                },
+                new QuestionAnswer {
+                    QuestionType = "Temukan Bug di Kode Ini",
+                    QuestionText = "public class Main {\r\n  public static void main(String[] args) {\r\n    int x = 10;\r\n    int y = 5;\r\n    int z = x // y;\r\n    System.out.println(z);\r\n  }\r\n}",
+                    Answers = new string[] { "//", "x", "y", "System.out.println" },
+                    CorrectAnswer = 0,
+                    IsMultipleChoice = true
+                },
+                new QuestionAnswer {
+                    QuestionType = "Apa Outputnya?",
+                    QuestionText = "public class Utama {\r\n  public static void main(String[] args) {\r\n    int x = 5;\r\n    if (x > 2) {\r\n      System.out.println(\"Lebih Besar\");\r\n    } else {\r\n      System.out.println(\"Lebih Kecil\");\r\n    }\r\n  }\r\n}",
+                    Answers = new string[] { "Lebih Besar", "Lebih Kecil", "Error", "Tidak Ada Output" },
+                    CorrectAnswer = 0,
+                    IsMultipleChoice = true
+                },
+                new QuestionAnswer {
+                    QuestionType = "Susun Kode Ini",
+                    Answers = new string[] { "}", "if (x > 2) {", "public static void main(String[] args) {", "System.out.println(\"Greater\");" },
+                    IsMultipleChoice = false,
+                    CorrectArrangement = new string[] { "public static void main(String[] args) {", "if (x > 2) {", "System.out.println(\"Greater\");", "}" }
+                },
+                new QuestionAnswer {
+                    QuestionType = "Temukan Bug di Kode Ini",
+                    QuestionText = "public class Main {\r\n  public static void main(String[] args) {\r\n    int[] arr = {1, 2, 3, 4, 5};\r\n    System.out.println(arr[5]);\r\n  }\r\n}",
+                    Answers = new string[] { "arr[5]", "int[] arr", "System.out.println", "public static void main" },
+                    CorrectAnswer = 0,
+                    IsMultipleChoice = true
+                },
+                new QuestionAnswer {
+                    QuestionType = "Apa Outputnya?",
+                    QuestionText = "public class Main {\r\n  public static void main(String[] args) {\r\n    int[] arr = {10, 20, 30, 40, 50};\r\n    System.out.println(arr[1] + arr[4]);\r\n  }\r\n}",
+                    Answers = new string[] { "30", "50", "60", "70" },
+                    CorrectAnswer = 3,
+                    IsMultipleChoice = true
+                },
+                new QuestionAnswer {
+                    QuestionType = "Lengkapi Kode Ini",
+                    QuestionText = "public class Main {\r\n  public static void main(String[] args) {\r\n    try {\r\n      int[] arr = {1, 2, 3};\r\n      System.out.println(arr[3]);\r\n    } catch (____________ e) {\r\n      System.out.println(\"Array index out of bounds\");\r\n    }\r\n  }\r\n}",
+                    Answers = new string[] { "IOException", "ArrayIndexOutOfBoundsException", "NullPointerException", "Exception" },
+                    CorrectAnswer = 1,
+                    IsMultipleChoice = true
+                },
+                new QuestionAnswer {
+                    QuestionType = "Susun Kode Ini",
+                    Answers = new string[] { "System.out.println(\"Division by zero\");", "try {", "int result = 10 / 0;", "} catch (ArithmeticException e) {" },
+                    IsMultipleChoice = false,
+                    CorrectArrangement = new string[] { "try {", "int result = 10 / 0;", "} catch (ArithmeticException e) {", "System.out.println(\"Division by zero\");" }
+                }
+                // Add more questions for PreTest as needed...
+            }
+        },
     {
         "Unit 1", new List<QuestionAnswer> {
             new QuestionAnswer {

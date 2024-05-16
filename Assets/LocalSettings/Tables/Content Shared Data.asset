@@ -63,6 +63,10 @@ MonoBehaviour:
     m_Key: ContinueKey
     m_Metadata:
       m_Items: []
+  - m_Id: 20373636621340672
+    m_Key: PracticeKey
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

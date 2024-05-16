@@ -24,6 +24,9 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: 877fe4c26d7c94a4db5021c8ba213c13
   - enabled: 1
+    path: Assets/Scenes/Practice.unity
+    guid: 3fadc7921ef68e6459ce61a70157995b
+  - enabled: 1
     path: Assets/Scenes/ReadMaterial.unity
     guid: 655a65a99086cd046bada3611544e831
   - enabled: 1

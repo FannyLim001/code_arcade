@@ -147,6 +147,13 @@ public class QuizManager : MonoBehaviour
 
     void GenerateQuestion()
     {
+        // Reset AnswerScript variables
+        AnswerScript[] answerScripts = FindObjectsOfType<AnswerScript>();
+        foreach (AnswerScript answerScript in answerScripts)
+        {
+            answerScript.ResetVariables();
+        }
+
         if (unansweredQuestion.Count > 0)
         {
             currentQuestion = Random.Range(0, unansweredQuestion.Count);
@@ -180,10 +187,13 @@ public class QuizManager : MonoBehaviour
         {
             currentUnit = "PreTest";
         }
-        else if (unit >= 0)
+        else if (unit >= 0 && unit <= 6)
         {
             int incrementUnit = unit + 1;
             currentUnit = "Unit " + incrementUnit.ToString();
+        } else
+        {
+            currentUnit = "Practice";
         }
 
         if (LocalizationSettings.SelectedLocale == LocalizationSettings.AvailableLocales.Locales[0])
@@ -218,12 +228,15 @@ public class QuizManager : MonoBehaviour
 
     public void Exit()
     {
-        if (PlayerPrefs.GetInt("LearnUnit", -1) >= 0)
+        if (PlayerPrefs.GetInt("LearnUnit", -1) >= 0 && PlayerPrefs.GetInt("LearnUnit", -1) <= 6)
         {
             SceneManager.LoadScene("ReadMaterial");
-        } else
+        } else if (PlayerPrefs.GetInt("LearnUnit", -1) == -1)
         {
             SceneManager.LoadScene("ChooseDifficulty");
+        } else
+        {
+            SceneManager.LoadScene("Practice");
         }
     }
 }

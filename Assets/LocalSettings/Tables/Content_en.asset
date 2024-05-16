@@ -67,6 +67,10 @@ MonoBehaviour:
     m_Localized: Continue
     m_Metadata:
       m_Items: []
+  - m_Id: 20373636621340672
+    m_Localized: Practice
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

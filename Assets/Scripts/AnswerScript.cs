@@ -1,6 +1,5 @@
 using UnityEngine;
 using TMPro;
-using System.Xml;
 using System;
 using UnityEngine.UI;
 
@@ -18,6 +17,7 @@ public class AnswerScript : MonoBehaviour
     private void Start()
     {
         image = GetComponent<Image>();
+        quizManager = FindObjectOfType<QuizManager>();
     }
 
     public void Answer()
@@ -44,15 +44,7 @@ public class AnswerScript : MonoBehaviour
             }
             else
             {
-                quizManager.QuestionText.text = "";
-                arrangedText = "";
-                for (int i = 0; i < arrangedArray.Length; i++)
-                {
-                    arrangedArray[i] = null; // Or arrangedArray[i] = "";
-                }
-                quizManager.ResetStoredList();
-                added = false;
-                image.color = Color.white; // Reset button color to white
+                ResetArrangement();
             }
 
             for (int i = 0; i < arrangedArray.Length; i++)
@@ -71,10 +63,22 @@ public class AnswerScript : MonoBehaviour
         }
     }
 
+    private void ResetArrangement()
+    {
+        quizManager.QuestionText.text = "";
+        arrangedText = "";
+        for (int i = 0; i < arrangedArray.Length; i++)
+        {
+            arrangedArray[i] = null; // Or arrangedArray[i] = "";
+        }
+        quizManager.ResetStoredList(); // Reset stored list for arrangement
+        added = false;
+        image.color = Color.white; // Reset button color to white
+    }
 
     public void CheckArr()
     {
-        bool arrangeCorrect = PlayerPrefs.GetInt("arrangeCorrect", 1) == 1;
+        bool arrangeCorrect = PlayerPrefs.GetInt("arrangeCorrect", 0) == 1;
 
         if (arrangeCorrect)
         {
@@ -88,5 +92,14 @@ public class AnswerScript : MonoBehaviour
             // Handle incorrect arrangement (e.g., show message)
             quizManager.Wrong();
         }
+    }
+
+    public void ResetVariables()
+    {
+        arrangedText = "";
+        arrangedArray = null;
+        quizManager.ResetStoredList();
+        added = false;
+        PlayerPrefs.SetInt("arrangeCorrect", 0); // Reset arrangement correctness status
     }
 }
